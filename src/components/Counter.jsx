@@ -3,7 +3,6 @@ import { useCounter } from "../redux/hooks";
 
 function Counter() {
   const { count, increment, decrement, reset } = useCounter();
-  // set MAX const to 21 and MIN const to 0
   const MAX = 21;
   const MIN = 0;
   return (
