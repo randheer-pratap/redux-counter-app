@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { increment, decrement } from "../slices/counter";
+import { increment, decrement, reset } from "../slices/counter";
 
 export const useCounter = () => {
   const dispatch = useDispatch();
@@ -9,5 +9,6 @@ export const useCounter = () => {
     count,
     increment: () => dispatch(increment()),
     decrement: () => dispatch(decrement()),
+    reset: () => dispatch(reset()),
   };
 };
